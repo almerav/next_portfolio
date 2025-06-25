@@ -3,6 +3,7 @@ import Header from '@/components/Header'
 import Image from 'next/image'
 import { projects } from '@/app/data/projects'
 import ProjectCard from '@/components/ProjectCard'
+import AboutSection from '@/components/AboutSection'
 
 export default function Home() {
   return (
@@ -41,36 +42,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Other Sections */}
-      <section
-        id="about"
-        className="h-screen flex items-center justify-center bg-white px-10 pl-30"
-      >
-        {/* Left Side: Title */}
-        <div className="flex-1 pl-8">
-          <h2 className="text-6xl font-semibold">ABOUT ME</h2>
-        </div>
-
-        {/* Right Side: Description */}
-        <div className="flex-1 pr-8">
-          <h1 className="text-3xl leading-relaxed">
-            I'm a <span className="text-amber-400 font-bold">Computer Science</span>{' '}
-            graduate majored in <span className="text-blue-500 font-bold">Artificial Intelligence</span> @ <span className="text-black-500 font-bold"> WVSU</span>.
-          </h1>
-          <p>While my academic focus is deeply rooted in AI, I’ve found myself really into creating smooth and 
-            eye-catching user experiences through UI/UX design and web dev.
-            Outside of that, I love connecting with like-minded people — and when I’m not coding, you’ll 
-            probably catch me playing League, Valorant, or whatever game’s popping at the moment.
-            </p>
-        </div>
-      </section>
+      {/* About Section */}
+      <AboutSection />
+      
 
       {/* Projects Section */}
       <section id="projects" className="min-h-screen bg-[#150050] px-6 py-20 text-white">
         <div className="max-w-7xl mx-auto">
           {/* Title + Resume Button in a row */}
           <div className="flex justify-between items-center mb-10">
-            <h2 className="text-5xl font-bold">EXPERIENCES</h2>
+            <h2 className="text-5xl font-bold">PROJECTS</h2>
             <a
               href="/resume.pdf"
               download
