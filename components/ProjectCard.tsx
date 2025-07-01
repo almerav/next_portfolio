@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { Project } from '@/data/projects'
+import { Project } from '@/app/data/projects'
 import Modal from './ProjectModal'
 
 interface Props {

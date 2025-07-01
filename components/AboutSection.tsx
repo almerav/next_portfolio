@@ -15,7 +15,7 @@ export default function AboutSection() {
   const [activeTab, setActiveTab] = useState('About Me')
 
    // Icon map MUST be inside the component, after `tabs`, or above `tabs.map()`
-  const icons: Record<string, JSX.Element> = {
+  const icons: Record<string, React.ReactElement> = {
     'About Me': <User className="w-6 h-6" />,
     'Experience': <Briefcase className="w-6 h-6" />,
     'Education': <GraduationCap className="w-6 h-6" />,

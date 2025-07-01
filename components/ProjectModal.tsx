@@ -1,5 +1,6 @@
 'use client'
-import { Project } from '@/data/projects'
+import { Project } from '@/app/data/projects'
+
 
 interface Props {
   project: Project
