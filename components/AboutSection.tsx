@@ -1,6 +1,5 @@
 'use client'
 import { useState } from 'react'
-import Image from 'next/image'
 import React from 'react'
 import SkillCard from '@/components/SkillCard'
 import {
@@ -139,16 +138,16 @@ case 'Skills and Tools':
       return (
         <div className="text-gray-300 space-y-6 S  px-4 md:px-0">
           <h3 className="text-2xl md:text-3xl font-semibold text-white">
-            I'm Almera Valladolid ツ
+            I&apos;m Almera Valladolid ツ
           </h3>
           <p className="text-xl md:text-2xl leading-snug">
             A recent <span className="text-amber-400 font-bold">Computer Science</span> graduate majoring in{' '}
             <span className="text-blue-500 font-bold">Artificial Intelligence</span> @ WVSU.
           </p>
           <p className="text-base md:text-lg leading-relaxed">
-            Even though my background is in AI, I’m passionate about clean, intuitive web interfaces and crafting
-            seamless digital experiences. In short, I'm into front-end development and UI/UX designing.
-            If I’m not debugging or designing, I’m probably mid-game in League, Valorant, or just vibing with my iced
+            Even though my background is in AI, I&apos;m passionate about clean, intuitive web interfaces and crafting
+            seamless digital experiences. In short, I&apos;m into front-end development and UI/UX designing.
+            If I’m not debugging or designing, I&apos;m probably mid-game in League, Valorant, or just vibing with my iced
             choco and dogs.
           </p>
         </div>

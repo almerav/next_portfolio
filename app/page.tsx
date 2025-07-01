@@ -69,10 +69,10 @@
             {/* Left Side: Text */}
             <div className="md:flex-1 text-center md:text-left ">
               <h1 className="text-4xl font-bold mb-4">
-                Hi! I'm <span className="text-pink-300">Almera</span> <span className="ml-1">ツ</span>
+                Hi! I&apos;m <span className="text-pink-300">Almera</span> <span className="ml-1">ツ</span>
               </h1>
               <p className="text-lg leading-relaxed text-gray-700 max-w-md mx-auto md:mx-0 text-white">
-                A Web Developer and UI/UX Designer. This site is your one-stop scroll to learn more about what I do, what I've built,
+                A Web Developer and UI/UX Designer. This site is your one-stop scroll to learn more about what I do, what I&apos;ve built,
                 and the things that keep me awake at 2 AM <span className="text-white font-bold">(ง ͠ಥ_ಥ)ง</span>
               </p>
               <a href="#contact">
@@ -144,7 +144,7 @@
     }}
         >
           <div className="max-w-4xl w-full bg-gray-50 p-10 rounded-xl shadow-lg">
-            <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Let's Connect</h2>
+            <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Let&apos;s Connect</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Contact Info */}
