@@ -15,7 +15,7 @@ export default function ProjectCard({ project }: Props) {
 
   return (
     <>
-      <div className="bg-purple-800 p-4 rounded-xl h-full flex flex-col justify-between">
+      <div className="bg-black p-4 rounded-xl h-full flex flex-col justify-between">
         {project.video ? (
           <video className="rounded-lg mb-2 w-full h-40 object-cover" autoPlay loop muted controls>
             <source src={project.video} type="video/mp4" />
@@ -27,12 +27,12 @@ export default function ProjectCard({ project }: Props) {
             className="rounded-lg mb-2 w-full h-40 object-cover"
           />
         )}
-        <p className="text-sm text-purple-200">{project.tag}</p>
-        <h3 className="text-lg font-bold mt-2">{truncate(project.title, 65)}</h3>
+        <p className="text-sm text-white">{project.tag}</p>
+        <h3 className="text-white text-lg font-bold mt-2">{truncate(project.title, 65)}</h3>
         <div className="flex justify-end mt-3">
           <button
             onClick={() => setIsOpen(true)}
-            className="text-blue-300 text-sm hover:underline"
+            className="bg-pink-400 p-2 rounded-sm text-black-300 text-sm hover:bg-amber-200"
           >
             Read More
           </button>
