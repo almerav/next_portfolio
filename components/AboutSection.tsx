@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
+import React from 'react'
 import SkillCard from '@/components/SkillCard'
 import {
   User,
