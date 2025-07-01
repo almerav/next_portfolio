@@ -16,7 +16,7 @@
           id="home"
           className="relative min-h-screen px-4 sm:px-6 md:px-8 py-20 flex items-center justify-center overflow-hidden"
           style={{
-      background: 'radial-gradient(circle, rgba(117,113,113,1) 0%, rgba(60,60,60,1) 50%, rgba(30,30,30,1) 100%)'
+      background: 'radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(141, 135, 135, 1) 34%, rgba(12, 10, 10, 1) 68%)'
     }}
         >
 
@@ -67,20 +67,23 @@
 
           <div className="font-sans max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 w-full text-white">
             {/* Left Side: Text */}
-            <div className="md:flex-1 text-center md:text-left ">
+            <div className="md:flex-1 text-center md:text-left">
               <h1 className="text-4xl font-bold mb-4">
                 Hi! I&apos;m <span className="text-pink-300">Almera</span> <span className="ml-1">ツ</span>
               </h1>
-              <p className="text-lg leading-relaxed text-gray-700 max-w-md mx-auto md:mx-0 text-white">
+              <p className="text-lg leading-relaxed text-white max-w-md mx-auto md:mx-0">
                 A Web Developer and UI/UX Designer. This site is your one-stop scroll to learn more about what I do, what I&apos;ve built,
                 and the things that keep me awake at 2 AM <span className="text-white font-bold">(ง ͠ಥ_ಥ)ง</span>
               </p>
-              <a href="#contact">
+
+              {/* Desktop only: CONTACT ME button */}
+              <a href="#contact" className="hidden md:inline-block">
                 <button className="bg-pink-200 hover:bg-pink-500 hover:text-white text-gray-800 p-3 px-6 mt-5 rounded-full font-bold transition-all duration-300 transform hover:scale-105 shadow-md">
                   CONTACT ME
                 </button>
               </a>
             </div>
+
 
             {/* Right Side: Image */}
             <div className="md:flex-1 flex justify-center items-center relative h-[400px] w-full md:h-[500px]"> 
@@ -98,7 +101,12 @@
             />
           </div>
 
+           {/* Background "almera" text */}
 
+            {/* Desktop View - "almera" text */}
+            <h1 className="hidden sm:block absolute -bottom-[23%] left-1/2 transform -translate-x-1/2 text-[30vw] leading-none font-poppins font-extrabold text-white/90 lowercase z-0 pointer-events-none select-none">
+              almera
+            </h1>
           </div>
         </section>
 
@@ -138,12 +146,16 @@
       </section>
 
         {/* Contact */}
-        <section id="contact" className="min-h-screen px-10 py-20 flex items-center justify-center"
-        style={{
-      background: 'radial-gradient(circle, rgba(117,113,113,1) 0%, rgba(60,60,60,1) 50%, rgba(30,30,30,1) 100%)'
-    }}
+        <section
+          id="contact"
+          className="relative min-h-screen px-4 sm:px-6 md:px-10 py-20 flex items-center justify-center overflow-hidden"
+          style={{
+            background:
+              'radial-gradient(circle, rgba(117,113,113,1) 0%, rgba(60,60,60,1) 50%, rgba(30,30,30,1) 100%)',
+          }}
         >
-          <div className="max-w-4xl w-full bg-gray-50 p-10 rounded-xl shadow-lg">
+          {/* Contact Card */}
+          <div className="max-w-4xl w-full bg-gray-50 drop-shadow-lg p-10 rounded-xl shadow-lg relative z-10">
             <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Let&apos;s Connect</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -155,25 +167,39 @@
                 <ul className="space-y-2 text-gray-600">
                   <li>
                     <strong>Email:</strong>{' '}
-                    <a href="mailto:valladolidalmera.j@gmail.com" className="text-pink-500 hover:underline">
+                    <a
+                      href="mailto:valladolidalmera.j@gmail.com"
+                      className="text-pink-500 hover:underline"
+                    >
                       valladolidalmera.j@gmail.com
                     </a>
                   </li>
                   <li>
                     <strong>LinkedIn:</strong>{' '}
-                    <a href="https://www.linkedin.com/in/almeravalladolid" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:underline">
+                    <a
+                      href="https://www.linkedin.com/in/almeravalladolid"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-pink-500 hover:underline"
+                    >
                       linkedin.com/in/almeravalladolid
                     </a>
                   </li>
                   <li>
                     <strong>GitHub:</strong>{' '}
-                    <a href="https://github.com/almerav" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:underline">
+                    <a
+                      href="https://github.com/almerav"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-pink-500 hover:underline"
+                    >
                       github.com/almerav
                     </a>
                   </li>
                 </ul>
               </div>
 
+              {/* Contact Form */}
               <form
                 action="https://formspree.io/f/meokryaw"
                 method="POST"
@@ -205,7 +231,6 @@
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 text-base md:text-lg"
                   />
                 </div>
-
                 <div>
                   <label htmlFor="message" className="block mb-1 font-medium text-gray-700">
                     Enter your message:
@@ -227,12 +252,20 @@
                   Send Message
                 </button>
               </form>
-
             </div>
           </div>
+
+          {/* Background Text - Positioned Below the Card */}
+          {/* Mobile View - "almera" text */}
+            <h1 className="block sm:hidden absolute -bottom-[-0%] left-1/2 transform -translate-x-1/2 text-[35vw] leading-none font-poppins font-extrabold text-white/30 lowercase z-0 pointer-events-none select-none">
+              almera
+            </h1>
+
+          {/* Desktop View - "almera" text */}
+            <h1 className="hidden sm:block absolute -bottom-[23%] left-1/2 transform -translate-x-1/2 text-[30vw] leading-none font-poppins font-extrabold text-white/90 lowercase z-0 pointer-events-none select-none">
+              almera
+            </h1>
         </section>
-
-
       </>
     )
   }

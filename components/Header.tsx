@@ -1,45 +1,50 @@
 'use client'
-import { useState } from 'react'
 import Image from 'next/image'
-import { Menu, X } from 'lucide-react'
+import {
+  Menu as MenuIcon,
+  User,
+  Folder,
+  Mail,
+  Home,
+} from 'lucide-react'
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false)
-
   return (
-    <header className="backdrop-blur-md bg-white/30 border-b border-white/20 shadow-md sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <Image src="/images/logo.png" alt="Logo" width={20} height={20} />
-          <span className="font-bold text-lg">MENG</span>
-        </div>
+    <>
+      {/* Top Header - Desktop Only */}
+      <header className="hidden md:block fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-6xl rounded-full bg-white/30 backdrop-blur-md border border-white/20 shadow-lg px-6 py-3">
+        <div className="flex justify-between items-center">
+          {/* Logo with text */}
+          <div className="flex items-center space-x-2">
+            <Image src="/images/logo.png" alt="Logo" width={24} height={24} />
+            <span className="font-bold text-lg text-white">MENG</span>
+          </div>
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-6">
-          <a href="#home" className="hover:text-pink-600">Home</a>
-          <a href="#about" className="hover:text-pink-600">About</a>
-          <a href="#projects" className="hover:text-pink-600">Projects</a>
-          <a href="#contact" className="hover:text-pink-600">Contact</a>
-        </nav>
-
-        {/* Mobile Menu Button */}
-        <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden focus:outline-none">
-          {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
-      </div>
-
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden px-4 pb-4">
-          <nav className="flex flex-col space-y-2">
-            <a href="#home" className="hover:text-pink-600" onClick={() => setMenuOpen(false)}>Home</a>
-            <a href="#about" className="hover:text-pink-600" onClick={() => setMenuOpen(false)}>About</a>
-            <a href="#projects" className="hover:text-pink-600" onClick={() => setMenuOpen(false)}>Projects</a>
-            <a href="#contact" className="hover:text-pink-600" onClick={() => setMenuOpen(false)}>Contact</a>
+          {/* Desktop Navigation */}
+          <nav className="flex space-x-6 font-medium text-white">
+            <a href="#home" className="hover:text-pink-400 transition">Home</a>
+            <a href="#about" className="hover:text-pink-400 transition">About</a>
+            <a href="#projects" className="hover:text-pink-400 transition">Projects</a>
+            <a href="#contact" className="hover:text-pink-400 transition">Contact</a>
           </nav>
         </div>
-      )}
-    </header>
+      </header>
+
+      {/* Bottom Mobile Nav - Only Icons */}
+      <nav className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 flex justify-around items-center py-2 z-50 md:hidden">
+        <a href="#home" className="text-gray-600 hover:text-pink-500" aria-label="Home">
+          <Home className="w-6 h-6" />
+        </a>
+        <a href="#about" className="text-gray-600 hover:text-pink-500" aria-label="About">
+          <User className="w-6 h-6" />
+        </a>
+        <a href="#projects" className="text-gray-600 hover:text-pink-500" aria-label="Projects">
+          <Folder className="w-6 h-6" />
+        </a>
+        <a href="#contact" className="text-gray-600 hover:text-pink-500" aria-label="Contact">
+          <Mail className="w-6 h-6" />
+        </a>
+      </nav>
+    </>
   )
 }
