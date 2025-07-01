@@ -1,7 +1,6 @@
 'use client'
 import Image from 'next/image'
 import {
-  Menu as MenuIcon,
   User,
   Folder,
   Mail,
