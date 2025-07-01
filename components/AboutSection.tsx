@@ -130,9 +130,9 @@ export default function AboutSection() {
               <span className="text-blue-500 font-bold">Artificial Intelligence</span> @ WVSU.
             </p>
             <p className="text-base md:text-lg leading-relaxed">
-              Even though my background is in AI, I'm passionate about clean, intuitive web interfaces and crafting
-              seamless digital experiences. In short, I'm into front-end development and UI/UX designing.
-              If I'm not debugging or designing, I'm probably mid-game in League, Valorant, or just vibing with my iced
+              Even though my background is in AI, I&apos;m passionate about clean, intuitive web interfaces and crafting
+              seamless digital experiences. In short, I&apos;m into front-end development and UI/UX designing.
+              If I&apos;m not debugging or designing, I&apos;m probably mid-game in League, Valorant, or just vibing with my iced
               choco and dogs.
             </p>
           </div>
