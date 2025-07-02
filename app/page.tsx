@@ -129,7 +129,7 @@
               <h2 className="text-5xl font-bold text-gray-800 font-poppins">PROJECTS</h2>
             </div>
             <a
-              href="/portresume.pdf"
+              href="/valladolid_resume.pdf"
               download
               className="bg-pink-500 hover:bg-pink-200 hover:text-gray-800 text-white p-3 px-6 mt-5 rounded-full font-bold transition-all duration-300 transform hover:scale-105 shadow-md">
               Download CV
