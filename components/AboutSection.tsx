@@ -91,35 +91,71 @@ export default function AboutSection() {
         </div>
       )
       case 'Skills and Tools':
-        return (
-          <div className="max-h-[500px] overflow-y-auto pr-2 mt-8 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900">
-            <div className="grid lg:grid-cols-3 gap-4">
-              <SkillCard title="Python" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-              <SkillCard title="C++" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
-              <SkillCard title="JavaScript" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-              <SkillCard title="TypeScript" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-              <SkillCard title="HTML5" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-              <SkillCard title="CSS3" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-              <SkillCard title="React.js" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-              <SkillCard title="Tailwind CSS" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
-              <SkillCard title="Next.js" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" />
-              <SkillCard title="NestJS" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg" />
-              <SkillCard title="PostgreSQL" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
-              <SkillCard title="Firebase" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
-              <SkillCard title="MySQL" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
-              <SkillCard title="Git" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-              <SkillCard title="GitHub" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-              <SkillCard title="Flutter" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" />
-              <SkillCard title="Figma" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
-              <SkillCard title="Photoshop" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
-              <SkillCard title="Canva" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" />
-              <SkillCard title="MS Word" icon="https://img.icons8.com/color/48/microsoft-word-2019.png" />
-              <SkillCard title="MS Excel" icon="https://img.icons8.com/color/48/microsoft-excel-2019.png" />
-              <SkillCard title="MS PowerPoint" icon="https://img.icons8.com/color/48/microsoft-powerpoint-2019.png" />
-              <SkillCard title="AutoCAD" icon="https://img.icons8.com/color/48/autocad.png" />
-            </div>
-          </div>
-        )
+  return (
+    <div className="max-h-[500px] overflow-y-auto pr-2 mt-8 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 space-y-6">
+      
+      {/* Programming Languages */}
+      <div>
+        <h3 className="text-white text-lg font-semibold mb-2">Programming Languages</h3>
+        <div className="grid lg:grid-cols-3 gap-4">
+          <SkillCard title="Python" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+          <SkillCard title="C++" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+          <SkillCard title="JavaScript" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+          <SkillCard title="TypeScript" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+        </div>
+      </div>
+
+      {/* Web Technologies */}
+      <div>
+        <h3 className="text-white text-lg font-semibold mb-2">Web Technologies</h3>
+        <div className="grid lg:grid-cols-3 gap-4">
+          <SkillCard title="HTML5" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+          <SkillCard title="CSS3" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+          <SkillCard title="Tailwind CSS" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
+        </div>
+      </div>
+
+      {/* Frameworks & Libraries */}
+      <div>
+        <h3 className="text-white text-lg font-semibold mb-2">Frameworks & Libraries</h3>
+        <div className="grid lg:grid-cols-3 gap-4">
+          <SkillCard title="React.js" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+          <SkillCard title="Next.js" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" />
+          <SkillCard title="NestJS" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg" />
+          <SkillCard title="Flutter" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" />
+        </div>
+      </div>
+
+      {/* Databases */}
+      <div>
+        <h3 className="text-white text-lg font-semibold mb-2">Databases</h3>
+        <div className="grid lg:grid-cols-3 gap-4">
+          <SkillCard title="PostgreSQL" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+          <SkillCard title="Firebase" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
+          <SkillCard title="MySQL" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+        </div>
+      </div>
+
+      {/* Developer Tools */}
+      <div>
+        <h3 className="text-white text-lg font-semibold mb-2">Developer Tools</h3>
+        <div className="grid lg:grid-cols-3 gap-4">
+          <SkillCard title="Git" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+          <SkillCard title="GitHub" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+        </div>
+      </div>
+
+      {/* UI/UX Tools */}
+      <div>
+        <h3 className="text-white text-lg font-semibold mb-2">UI/UX Tools</h3>
+        <div className="grid lg:grid-cols-3 gap-4">
+          <SkillCard title="Figma" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+        </div>
+      </div>
+
+    </div>
+  )
+
 
       case 'About Me':
         return (
