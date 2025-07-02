@@ -266,6 +266,15 @@
               almera
             </h1>
         </section>
-      </>
+      
+
+      { /* Footer */ }
+      <section
+      id="footer"
+      className="bg-black text-white text-center py-4 px-4 text-sm sm:text-base font-poppins"
+    >
+      &copy; {new Date().getFullYear()} almeravalladolid. All rights reserved.
+    </section>
+    </>
     )
   }
