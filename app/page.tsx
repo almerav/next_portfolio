@@ -6,20 +6,12 @@ import Image from 'next/image'
 import { projects } from '@/app/data/projects'
 import ProjectCard from '@/components/ProjectCard'
 import AboutSection from '@/components/AboutSection'
-import { motion } from 'framer-motion'
 import { Typewriter } from 'react-simple-typewriter'
 import FadeInWhenVisible from '@/components/FadeInWhenVisible'
 import Animation from '@/components/Animation'
-import ShootingStars from '@/components/Fireflies'
 import Fireflies from '@/components/Fireflies'
 
 export default function Home() {
-  // ✅ Move these INSIDE the component
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
 
   return (
     <>
