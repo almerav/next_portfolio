@@ -32,6 +32,7 @@ const dancingScript = Dancing_Script({
   subsets: ["latin"],
 });
 
+
 // Site metadata
 export const metadata: Metadata = {
   title: "almeravalladolid",
@@ -47,6 +48,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/images/logo.png" type="image/png" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body
         className={`

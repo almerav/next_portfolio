@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <>
       {/* Top Header - Desktop Only */}
-      <header className="hidden md:block fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-6xl rounded-full bg-white/30 backdrop-blur-md border border-white/20 shadow-lg px-6 py-3">
+      <header className="font-intel hidden md:block fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-6xl rounded-full bg-white/30 backdrop-blur-md border border-white/20 shadow-lg px-6 py-3">
         <div className="flex justify-between items-center">
           {/* Logo with text */}
           <div className="flex items-center space-x-2">

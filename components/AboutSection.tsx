@@ -8,6 +8,8 @@ import {
   GraduationCap,
   Wrench
 } from 'lucide-react'
+import FadeInWhenVisible from '@/components/FadeInWhenVisible'
+import Animation from '@/components/Animation'
 
 const tabs = ['About Me', 'Experience', 'Education', 'Skills and Tools']
 
@@ -25,7 +27,7 @@ export default function AboutSection() {
     switch (activeTab) {
        case 'Experience':
         return (
-          <div className="grid md:grid-cols-2 gap-6  px-6">
+          <div className="font-intel grid md:grid-cols-2 gap-6  px-6">
             <div className="bg-gray-800 hover:bg-gray-600 p-6 rounded-xl">
               <p className="text-pink-400 text-sm">January 2025 – April 2025</p>
               <h3 className="font-bold text-white">Software Developer Intern</h3>
@@ -60,7 +62,7 @@ export default function AboutSection() {
 
      case 'Education':
       return (
-        <div className="grid md:grid-cols-2 gap-6 px-4">
+        <div className="font-intel grid md:grid-cols-2 gap-6 px-4">
           <div className="bg-gray-800 p-6 rounded-xl">
             <p className="text-gray-300 text-sm">Tertiary Education</p>
             <h3 className="font-bold text-white">WEST VISAYAS STATE UNIVERSITY - MAIN CAMPUS</h3>
@@ -92,7 +94,7 @@ export default function AboutSection() {
       )
       case 'Skills and Tools':
   return (
-    <div className="max-h-[500px] overflow-y-auto pr-2 mt-8 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 space-y-6">
+    <div className="font-intel max-h-[500px] overflow-y-auto pr-2 mt-8 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 space-y-6">
       
       {/* Programming Languages */}
       <div>
@@ -159,7 +161,7 @@ export default function AboutSection() {
 
       case 'About Me':
         return (
-          <div className="text-gray-300 space-y-6 px-4 md:px-0 flex flex-col items-center text-center">
+          <div className="font-intel text-gray-300 space-y-6 px-4 md:px-0 flex flex-col items-center text-center">
             <h3 className="text-3xl font-bold text-white">My name is Almera Valladolid ツ</h3>
             <p className="text-xl leading-snug">
               A recent <span className="text-yellow-400 font-bold">Computer Science</span> graduate majoring in{' '}
@@ -180,11 +182,13 @@ export default function AboutSection() {
   }
 
   return (
-    <section id="about" className="min-h-screen bg-[#0a0a0a] px-4 sm:px-6 md:px-8 py-20 text-white">
+    <section id="about" className="font-intel min-h-screen bg-[#0a0a0a] px-4 sm:px-6 md:px-8 py-20 text-white">
       <div className="max-w-6xl mx-auto">
+        <FadeInWhenVisible>
         <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-8">
           ABOUT <span className="text-pink-400">ME</span>
         </h2>
+        </FadeInWhenVisible>
 
         {/* Mobile View */}
         <div className="md:hidden mb-8">
@@ -223,7 +227,9 @@ export default function AboutSection() {
           ))}
         </div>
 
+        <Animation>
         <div className="w-full">{renderContent()}</div>
+        </Animation>
       </div>
     </section>
   )
