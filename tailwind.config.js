@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        intel: ['var(--font-intel-one-mono)'],
         sans: ['var(--font-poppins)', 'sans-serif'],
         mono: ['var(--font-geist-mono)', 'monospace'],
         cursive: ['var(--font-dancing)', 'cursive'],
