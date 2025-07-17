@@ -1,11 +1,16 @@
 'use client'
 import { useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { useRef, ReactNode } from 'react'
 import { motion } from 'framer-motion'
 
-export default function ScrollFade({ children, delay = 0 }) {
+interface ScrollFadeProps {
+  children: ReactNode
+  delay?: number
+}
+
+export default function ScrollFade({ children, delay = 0 }: ScrollFadeProps) {
   const ref = useRef(null)
-  const inView = useInView(ref, { triggerOnce: false, amount: 0.2 }) // <== re-triggers on scroll
+  const inView = useInView(ref, { once: false, amount: 0.2 }) // Changed triggerOnce to once
 
   return (
     <motion.div

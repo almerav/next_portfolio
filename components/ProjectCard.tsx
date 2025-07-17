@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { Project } from '@/app/data/projects'
 import Modal from './ProjectModal'
+import Image from 'next/image'
 
 interface Props {
   project: Project
@@ -20,13 +21,15 @@ export default function ProjectCard({ project }: Props) {
           <video className="rounded-lg mb-2 w-full h-40 object-cover" autoPlay loop muted controls>
             <source src={project.video} type="video/mp4" />
           </video>
-        ) : (
-          <img
+        ) : project.image ? (
+          <Image
             src={project.image}
             alt={project.title}
+            width={320}
+            height={160}
             className="rounded-lg mb-2 w-full h-40 object-cover"
           />
-        )}
+        ) : null}
         <p className="text-sm text-white">{project.tag}</p>
         <h3 className="text-white text-lg font-bold mt-2">{truncate(project.title, 65)}</h3>
         <div className="flex justify-end mt-3">
@@ -39,7 +42,6 @@ export default function ProjectCard({ project }: Props) {
         </div>
       </div>
 
-      {/* Modal */}
       {isOpen && <Modal project={project} onClose={() => setIsOpen(false)} />}
     </>
   )

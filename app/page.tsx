@@ -1,6 +1,5 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import Header from '@/components/Header'
 import Image from 'next/image'
 import { projects } from '@/app/data/projects'
